@@ -1,95 +1,276 @@
-
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
   <meta charset="UTF-8">
-  <title>کافه هونا</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/font-face.css" rel="stylesheet" type="text/css" />
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Vazir', sans-serif;
-      background-color: #f9f6f2;
-      color: #333;
-    }
-    header {
-      background-color: #e0dcd5;
-      padding: 40px 20px;
-      text-align: center;
-      border-bottom: 4px solid #b0a99f;
-    }
-    header h1 {
-      font-size: 3em;
-      margin: 0;
-      color: #5a4e4e;
-    }
-    header p {
-      font-size: 1.2em;
-      color: #7a6f6f;
-    }
-    .menu-section {
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 20px;
-      background-color: #ffffff;
-      border: 2px solid #dcd6d0;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
-    }
-    .menu-title {
-      font-size: 1.8em;
-      color: #5a4e4e;
-      border-bottom: 2px solid #dcd6d0;
-      margin-bottom: 20px;
-      padding-bottom: 10px;
-    }
-    .menu-item {
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 15px;
-      font-size: 1.1em;
-    }
-    .menu-item span {
-      color: #7a6f6f;
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      font-size: 0.9em;
-      color: #999;
-      border-top: 1px solid #ccc;
-    }
-    img {
-      max-width: 100%;
-      border-radius: 8px;
-      margin-top: 20px;
-    }
-  </style>
+  <title>کافه منو</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>کافه هونا</h1>
-    <p>منوی قهوه و دسر | فقط بیرون‌بر</p>
+    <h1>کافه ما</h1>
+    <nav>
+      <a href="#hot">نوشیدنی‌های گرم</a>
+      <a href="#cold">نوشیدنی‌های سرد</a>
+      <a href="#dessert">دسرها</a>
+      <a href="#tea">دمنوش‌ها</a>
+      <a href="#food">غذاها</a>
+    </nav>
   </header>
+<section class="menu-section" id="hot">
+<h2>نوشیدنی‌های گرم</h2>
+<div class="menu-items">
 
-  <div class="menu-section">
-    <div class="menu-title">قهوه‌ها</div>
-    <div class="menu-item"><span>آمریکانو</span><span>7۵,۰۰۰ تومان</span></div>
-    <div class="menu-item"><span>لاته</span><span>۴۵,۰۰۰ تومان</span></div>
-    <div class="menu-item"><span>کاپوچینو</span><span>۴۵,۰۰۰ تومان</span></div>
-    <div class="menu-item"><span>قهوه دمی</span><span>۵۰,۰۰۰ تومان</span></div>
-  </div>
+      <div class="menu-item" onclick="toggleDetails(this)">
+        <img src="assets/images/latte.png" alt="لاته وانیلی">
+        <h3>لاته وانیلی</h3>
+        <p class="price">78,000 تومان</p>
+        <div class="details">
+          <ul><li>ترکیب ۱</li><li>ترکیب ۲</li></ul>
+        </div>
+      </div>
 
-  <div class="menu-section">
-    <div class="menu-title">دسرها</div>
-    <div class="menu-item"><span>چیزکیک تمشک</span><span>۶۰,۰۰۰ تومان</span></div>
-    <div class="menu-item"><span>براونی شکلاتی</span><span>۵۵,۰۰۰ تومان</span></div>
-    <div class="menu-item"><span>کوکی کره‌ای</span><span>۳۰,۰۰۰ تومان</span></div>
-  </div>
+      <div class="menu-item" onclick="toggleDetails(this)">
+        <img src="assets/images/americano.png" alt="آمریکانو">
+        <h3>آمریکانو</h3>
+        <p class="price">60,000 تومان</p>
+        <div class="details">
+          <ul><li>ترکیب ۱</li><li>ترکیب ۲</li></ul>
+        </div>
+      </div>
+
+      <div class="menu-item" onclick="toggleDetails(this)">
+        <img src="assets/images/cappuccino.png" alt="کاپوچینو">
+        <h3>کاپوچینو</h3>
+        <p class="price">72,000 تومان</p>
+        <div class="details">
+          <ul><li>ترکیب ۱</li><li>ترکیب ۲</li></ul>
+        </div>
+      </div>
+
+      <div class="menu-item" onclick="toggleDetails(this)">
+        <img src="assets/images/macchiato.png" alt="ماکیاتو">
+        <h3>ماکیاتو</h3>
+        <p class="price">74,000 تومان</p>
+        <div class="details">
+          <ul><li>ترکیب ۱</li><li>ترکیب ۲</li></ul>
+        </div>
+      </div>
+
+      <div class="menu-item" onclick="toggleDetails(this)">
+        <img src="assets/images/mocha.png" alt="موکا">
+        <h3>موکا</h3>
+        <p class="price">84,000 تومان</p>
+        <div class="details">
+          <ul><li>ترکیب ۱</li><li>ترکیب ۲</li></ul>
+        </div>
+      </div>
+</div>
+</section>
+<section class="menu-section" id="cold">
+<h2>نوشیدنی‌های سرد</h2>
+<div class="menu-items">
+
+      <div class="menu-item" onclick="toggleDetails(this)">
+        <img src="assets/images/ice-latte.png" alt="آیس لاته">
+        <h3>آیس لاته</h3>
+        <p class="price">78,000 تومان</p>
+        <div class="details">
+          <ul><li>ترکیب ۱</li><li>ترکیب ۲</li></ul>
+        </div>
+      </div>
+
+      <div class="menu-item" onclick="toggleDetails(this)">
+        <img src="assets/images/ice-mocha.png" alt="آیس موکا">
+        <h3>آیس موکا</h3>
+        <p class="price">84,000 تومان</p>
+        <div class="details">
+          <ul><li>ترکیب ۱</li><li>ترکیب ۲</li></ul>
+        </div>
+      </div>
+
+      <div class="menu-item" onclick="toggleDetails(this)">
+        <img src="assets/images/ice-americano.png" alt="آیس آمریکانو">
+        <h3>آیس آمریکانو</h3>
+        <p class="price">66,000 تومان</p>
+        <div class="details">
+          <ul><li>ترکیب ۱</li><li>ترکیب ۲</li></ul>
+        </div>
+      </div>
+
+      <div class="menu-item" onclick="toggleDetails(this)">
+        <img src="assets/images/ice-chocolate.png" alt="آیس چاکلت">
+        <h3>آیس چاکلت</h3>
+        <p class="price">70,000 تومان</p>
+        <div class="details">
+          <ul><li>ترکیب ۱</li><li>ترکیب ۲</li></ul>
+        </div>
+      </div>
+
+      <div class="menu-item" onclick="toggleDetails(this)">
+        <img src="assets/images/frappe.png" alt="فرپه">
+        <h3>فرپه</h3>
+        <p class="price">76,000 تومان</p>
+        <div class="details">
+          <ul><li>ترکیب ۱</li><li>ترکیب ۲</li></ul>
+        </div>
+      </div>
+</div>
+</section>
+<section class="menu-section" id="dessert">
+<h2>دسرها</h2>
+<div class="menu-items">
+
+      <div class="menu-item" onclick="toggleDetails(this)">
+        <img src="assets/images/cheesecake.png" alt="چیزکیک">
+        <h3>چیزکیک</h3>
+        <p class="price">85,000 تومان</p>
+        <div class="details">
+          <ul><li>ترکیب ۱</li><li>ترکیب ۲</li></ul>
+        </div>
+      </div>
+
+      <div class="menu-item" onclick="toggleDetails(this)">
+        <img src="assets/images/tiramisu.png" alt="تیرامیسو">
+        <h3>تیرامیسو</h3>
+        <p class="price">84,000 تومان</p>
+        <div class="details">
+          <ul><li>ترکیب ۱</li><li>ترکیب ۲</li></ul>
+        </div>
+      </div>
+
+      <div class="menu-item" onclick="toggleDetails(this)">
+        <img src="assets/images/cupcake.png" alt="کاپ کیک">
+        <h3>کاپ کیک</h3>
+        <p class="price">60,000 تومان</p>
+        <div class="details">
+          <ul><li>ترکیب ۱</li><li>ترکیب ۲</li></ul>
+        </div>
+      </div>
+
+      <div class="menu-item" onclick="toggleDetails(this)">
+        <img src="assets/images/brownie.png" alt="براونی">
+        <h3>براونی</h3>
+        <p class="price">70,000 تومان</p>
+        <div class="details">
+          <ul><li>ترکیب ۱</li><li>ترکیب ۲</li></ul>
+        </div>
+      </div>
+
+      <div class="menu-item" onclick="toggleDetails(this)">
+        <img src="assets/images/waffle.png" alt="وافل">
+        <h3>وافل</h3>
+        <p class="price">72,000 تومان</p>
+        <div class="details">
+          <ul><li>ترکیب ۱</li><li>ترکیب ۲</li></ul>
+        </div>
+      </div>
+</div>
+</section>
+<section class="menu-section" id="tea">
+<h2>دمنوش‌ها</h2>
+<div class="menu-items">
+
+      <div class="menu-item" onclick="toggleDetails(this)">
+        <img src="assets/images/borage.png" alt="دمنوش گل‌گاوزبان">
+        <h3>دمنوش گل‌گاوزبان</h3>
+        <p class="price">48,000 تومان</p>
+        <div class="details">
+          <ul><li>ترکیب ۱</li><li>ترکیب ۲</li></ul>
+        </div>
+      </div>
+
+      <div class="menu-item" onclick="toggleDetails(this)">
+        <img src="assets/images/chamomile.png" alt="دمنوش بابونه">
+        <h3>دمنوش بابونه</h3>
+        <p class="price">45,000 تومان</p>
+        <div class="details">
+          <ul><li>ترکیب ۱</li><li>ترکیب ۲</li></ul>
+        </div>
+      </div>
+
+      <div class="menu-item" onclick="toggleDetails(this)">
+        <img src="assets/images/ginger-lemon.png" alt="دمنوش زنجبیل و لیمو">
+        <h3>دمنوش زنجبیل و لیمو</h3>
+        <p class="price">50,000 تومان</p>
+        <div class="details">
+          <ul><li>ترکیب ۱</li><li>ترکیب ۲</li></ul>
+        </div>
+      </div>
+
+      <div class="menu-item" onclick="toggleDetails(this)">
+        <img src="assets/images/hibiscus.png" alt="دمنوش چای ترش">
+        <h3>دمنوش چای ترش</h3>
+        <p class="price">54,000 تومان</p>
+        <div class="details">
+          <ul><li>ترکیب ۱</li><li>ترکیب ۲</li></ul>
+        </div>
+      </div>
+
+      <div class="menu-item" onclick="toggleDetails(this)">
+        <img src="assets/images/mint.png" alt="دمنوش نعناع">
+        <h3>دمنوش نعناع</h3>
+        <p class="price">44,000 تومان</p>
+        <div class="details">
+          <ul><li>ترکیب ۱</li><li>ترکیب ۲</li></ul>
+        </div>
+      </div>
+</div>
+</section>
+<section class="menu-section" id="food">
+<h2>غذاها</h2>
+<div class="menu-items">
+
+      <div class="menu-item" onclick="toggleDetails(this)">
+        <img src="assets/images/salad.png" alt="سالاد سزار">
+        <h3>سالاد سزار</h3>
+        <p class="price">108,000 تومان</p>
+        <div class="details">
+          <ul><li>ترکیب ۱</li><li>ترکیب ۲</li></ul>
+        </div>
+      </div>
+
+      <div class="menu-item" onclick="toggleDetails(this)">
+        <img src="assets/images/pasta.png" alt="پاستا آلفردو">
+        <h3>پاستا آلفردو</h3>
+        <p class="price">120,000 تومان</p>
+        <div class="details">
+          <ul><li>ترکیب ۱</li><li>ترکیب ۲</li></ul>
+        </div>
+      </div>
+
+      <div class="menu-item" onclick="toggleDetails(this)">
+        <img src="assets/images/sandwich.png" alt="ساندویچ بوقلمون">
+        <h3>ساندویچ بوقلمون</h3>
+        <p class="price">95,000 تومان</p>
+        <div class="details">
+          <ul><li>ترکیب ۱</li><li>ترکیب ۲</li></ul>
+        </div>
+      </div>
+
+      <div class="menu-item" onclick="toggleDetails(this)">
+        <img src="assets/images/soup.png" alt="سوپ قارچ">
+        <h3>سوپ قارچ</h3>
+        <p class="price">60,000 تومان</p>
+        <div class="details">
+          <ul><li>ترکیب ۱</li><li>ترکیب ۲</li></ul>
+        </div>
+      </div>
+
+      <div class="menu-item" onclick="toggleDetails(this)">
+        <img src="assets/images/pizza.png" alt="پیتزا مخلوط">
+        <h3>پیتزا مخلوط</h3>
+        <p class="price">130,000 تومان</p>
+        <div class="details">
+          <ul><li>ترکیب ۱</li><li>ترکیب ۲</li></ul>
+        </div>
+      </div>
+</div>
+</section>
 
   <footer>
-    آدرس: تهران، خیابان مثال | اینستاگرام: @hona.cafe
+    <p>تمام حقوق محفوظ است - کافه ما</p>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>
