@@ -4,7 +4,3 @@ function toggleDetails(item) {
   });
   item.classList.toggle('active');
 }
-function scrollToSection(id) {
-  const section = document.getElementById(id);
-  section.scrollIntoView({ behavior: 'smooth' });
-}

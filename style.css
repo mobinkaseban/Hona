@@ -1,54 +1,62 @@
 body {
+  margin: 0;
   font-family: sans-serif;
   direction: rtl;
   background: #f2fef5;
   color: #234d33;
-  margin: 0;
+}
+.sidebar {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 180px;
+  height: 100vh;
+  background: #d0f0dc;
+  border-left: 2px dashed #a7cfb5;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  padding-top: 30px;
+}
+.sidebar ul {
+  list-style: none;
   padding: 0;
-}
-header {
-  background: #daf5e9;
-  padding: 20px;
+  margin: 0;
   text-align: center;
-  border-bottom: 2px solid #bde3d2;
 }
-nav.category-nav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
-  margin-top: 10px;
+.sidebar ul li {
+  margin: 20px 0;
 }
-nav.category-nav button {
-  padding: 10px 20px;
-  border: none;
-  background: #79c2a0;
-  color: #fff;
-  border-radius: 10px;
+.sidebar ul li a {
+  text-decoration: none;
+  color: #234d33;
   font-weight: bold;
-  cursor: pointer;
+  transition: color 0.3s;
 }
-nav.category-nav button:hover {
-  background: #5aa987;
+.sidebar ul li a:hover {
+  color: #166644;
+}
+main {
+  margin-right: 200px;
+  padding: 40px;
 }
 .menu-section {
-  padding: 40px;
-  text-align: center;
+  margin-bottom: 60px;
 }
 .menu-items {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
+  justify-content: flex-start;
 }
 .menu-item {
   background: #ffffff;
-  border: 2px dashed #b0dbc9;
-  border-radius: 20px;
+  border: 2px dashed #a7cfb5;
+  border-radius: 16px;
   padding: 20px;
   width: 200px;
   cursor: pointer;
   transition: transform 0.3s ease;
+  position: relative;
   box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
 .menu-item:hover {
@@ -59,19 +67,21 @@ nav.category-nav button:hover {
   height: auto;
 }
 .details {
-  display: none;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  transition: all 0.5s ease;
+  background: #e6f5eb;
   margin-top: 10px;
-  background: #e8f7ef;
-  padding: 10px;
   border-radius: 8px;
-  font-size: 14px;
+  padding: 0 10px;
 }
 .menu-item.active .details {
-  display: block;
+  opacity: 1;
+  height: auto;
+  padding: 10px;
 }
-footer {
-  text-align: center;
-  padding: 20px;
-  background: #daf5e9;
-  margin-top: 40px;
+.price {
+  font-weight: bold;
+  margin: 10px 0 0;
 }
