@@ -5,36 +5,128 @@ body {
   background: linear-gradient(to top, #f5e9df, #e7d6c4);
   color: #3e2c21;
 }
-.menu {
+.home {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 100vh;
+  text-align: center;
+}
+.home-container {
+  display: flex;
   flex-direction: column;
-  padding: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.home-coffee {
+  width: 180px;
+  border-radius: 100px;
+  margin-bottom: 20px;
+}
+.home-button {
+  margin-top: 20px;
+  padding: 12px 24px;
+  border: none;
+  background-color: #6c4c3d;
+  color: white;
+  font-size: 16px;
+  border-radius: 30px;
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  direction: rtl;
+  background: linear-gradient(to top, #f5e9df, #e7d6c4);
+  color: #3e2c21;
 }
 .menu-container {
-  width: 100%;
-  max-width: 600px;
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
 }
-.category-block {
-  margin-bottom: 30px;
+h1 {
+  text-align: center;
+  margin-bottom: 40px;
 }
-.category-cards {
+.menu-category {
+  margin-bottom: 40px;
+}
+.menu-category h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+.cards {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 12px;
   justify-content: center;
-  margin-top: 10px;
 }
 .card {
   background-color: #fff;
-  padding: 10px 20px;
-  border-radius: 16px;
+  padding: 14px 24px;
+  border-radius: 24px;
   text-decoration: none;
   color: #3e2c21;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  transition: transform 0.3s;
+  font-weight: bold;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
 }
 .card:hover {
-  transform: translateY(-3px);
+  transform: translateY(-4px);
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  direction: rtl;
+  background: linear-gradient(to top, #f5e9df, #e7d6c4);
+  color: #3e2c21;
+}
+.details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+}
+.details-container {
+  background-color: #fff;
+  border-radius: 24px;
+  padding: 30px 40px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  max-width: 400px;
+}
+.product-img {
+  width: 120px;
+  margin: 20px 0;
+}
+.price {
+  font-size: 18px;
+  font-weight: bold;
+}
+.ingredients {
+  font-size: 14px;
+  color: #555;
+}
+.sizes {
+  margin: 15px 0;
+}
+.sizes button {
+  margin: 5px;
+  padding: 8px 14px;
+  border: 1px solid #aaa;
+  border-radius: 10px;
+  background: white;
+  cursor: pointer;
+}
+.add-to-cart {
+  margin-top: 15px;
+  padding: 12px 24px;
+  background-color: #6c4c3d;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
 }
