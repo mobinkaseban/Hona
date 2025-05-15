@@ -1,16 +1,16 @@
 body {
   font-family: sans-serif;
   direction: rtl;
-  background: #fefaf5;
-  color: #3e2c21;
+  background: #f2fef5;
+  color: #234d33;
   margin: 0;
   padding: 0;
 }
 header {
-  background: #fff4e6;
+  background: #daf5e9;
   padding: 20px;
   text-align: center;
-  border-bottom: 2px solid #e0d6cc;
+  border-bottom: 2px solid #bde3d2;
 }
 nav.category-nav {
   display: flex;
@@ -22,13 +22,14 @@ nav.category-nav {
 nav.category-nav button {
   padding: 10px 20px;
   border: none;
-  background: #d9cbb8;
+  background: #79c2a0;
+  color: #fff;
   border-radius: 10px;
   font-weight: bold;
   cursor: pointer;
 }
 nav.category-nav button:hover {
-  background: #c0ac91;
+  background: #5aa987;
 }
 .menu-section {
   padding: 40px;
@@ -41,8 +42,8 @@ nav.category-nav button:hover {
   gap: 20px;
 }
 .menu-item {
-  background: #fff;
-  border: 2px dashed #d3c0a6;
+  background: #ffffff;
+  border: 2px dashed #b0dbc9;
   border-radius: 20px;
   padding: 20px;
   width: 200px;
@@ -60,7 +61,7 @@ nav.category-nav button:hover {
 .details {
   display: none;
   margin-top: 10px;
-  background: #f3efe8;
+  background: #e8f7ef;
   padding: 10px;
   border-radius: 8px;
   font-size: 14px;
@@ -71,6 +72,6 @@ nav.category-nav button:hover {
 footer {
   text-align: center;
   padding: 20px;
-  background: #fff4e6;
+  background: #daf5e9;
   margin-top: 40px;
 }
