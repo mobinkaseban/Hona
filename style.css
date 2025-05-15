@@ -5,31 +5,16 @@ body {
   background: linear-gradient(to top, #f5e9df, #e7d6c4);
   color: #3e2c21;
 }
-.home, .menu, .details {
+.menu {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
-  text-align: center;
   flex-direction: column;
-}
-.home-coffee {
-  width: 180px;
-  border-radius: 100px;
-}
-.home-button {
-  margin-top: 20px;
-  padding: 12px 24px;
-  border: none;
-  background-color: #6c4c3d;
-  color: white;
-  font-size: 16px;
-  border-radius: 30px;
-  text-decoration: none;
+  padding: 20px;
 }
 .menu-container {
-  padding: 20px;
   width: 100%;
+  max-width: 600px;
 }
 .category-block {
   margin-bottom: 30px;
@@ -37,49 +22,19 @@ body {
 .category-cards {
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
+  gap: 10px;
   justify-content: center;
   margin-top: 10px;
 }
 .card {
   background-color: #fff;
   padding: 10px 20px;
-  border-radius: 20px;
+  border-radius: 16px;
   text-decoration: none;
   color: #3e2c21;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
 }
-.details-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.product-img {
-  width: 120px;
-  margin: 20px 0;
-}
-.price {
-  font-size: 18px;
-  margin-bottom: 5px;
-}
-.ingredients {
-  font-size: 14px;
-  color: #555;
-}
-.sizes button {
-  margin: 0 5px;
-  padding: 8px 12px;
-  border: 1px solid #aaa;
-  border-radius: 8px;
-  background: white;
-  cursor: pointer;
-}
-.add-to-cart {
-  margin-top: 20px;
-  padding: 12px 24px;
-  background-color: #6c4c3d;
-  color: white;
-  border: none;
-  border-radius: 30px;
-  cursor: pointer;
+.card:hover {
+  transform: translateY(-3px);
 }
