@@ -3,18 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>کافه منو</title>
+  <title>کافه ما</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
     <h1>کافه ما</h1>
-    <nav>
-      <a href="#hot">نوشیدنی‌های گرم</a>
-      <a href="#cold">نوشیدنی‌های سرد</a>
-      <a href="#dessert">دسرها</a>
-      <a href="#tea">دمنوش‌ها</a>
-      <a href="#food">غذاها</a>
+    <nav class="category-nav">
+      <button onclick="scrollToSection('hot')">نوشیدنی‌های گرم</button>
+      <button onclick="scrollToSection('cold')">نوشیدنی‌های سرد</button>
+      <button onclick="scrollToSection('dessert')">دسرها</button>
+      <button onclick="scrollToSection('tea')">دمنوش‌ها</button>
+      <button onclick="scrollToSection('food')">غذاها</button>
     </nav>
   </header>
 <section class="menu-section" id="hot">
@@ -22,26 +22,35 @@
 <div class="menu-items">
 
       <div class="menu-item" onclick="toggleDetails(this)">
-        <img src="assets/images/latte.png" alt="لاته وانیلی">
-        <h3>لاته وانیلی</h3>
-        <p class="price">78,000 تومان</p>
+        <img src="assets/images/hot1.png" alt="نوشیدنی‌های گرم 1">
+        <h3>نوشیدنی‌های گرم 1</h3>
+        <p class="price">63,000 تومان</p>
         <div class="details">
           <ul><li>ترکیب ۱</li><li>ترکیب ۲</li></ul>
         </div>
       </div>
 
       <div class="menu-item" onclick="toggleDetails(this)">
-        <img src="assets/images/americano.png" alt="آمریکانو">
-        <h3>آمریکانو</h3>
-        <p class="price">60,000 تومان</p>
+        <img src="assets/images/hot2.png" alt="نوشیدنی‌های گرم 2">
+        <h3>نوشیدنی‌های گرم 2</h3>
+        <p class="price">66,000 تومان</p>
         <div class="details">
           <ul><li>ترکیب ۱</li><li>ترکیب ۲</li></ul>
         </div>
       </div>
 
       <div class="menu-item" onclick="toggleDetails(this)">
-        <img src="assets/images/cappuccino.png" alt="کاپوچینو">
-        <h3>کاپوچینو</h3>
+        <img src="assets/images/hot3.png" alt="نوشیدنی‌های گرم 3">
+        <h3>نوشیدنی‌های گرم 3</h3>
+        <p class="price">69,000 تومان</p>
+        <div class="details">
+          <ul><li>ترکیب ۱</li><li>ترکیب ۲</li></ul>
+        </div>
+      </div>
+
+      <div class="menu-item" onclick="toggleDetails(this)">
+        <img src="assets/images/hot4.png" alt="نوشیدنی‌های گرم 4">
+        <h3>نوشیدنی‌های گرم 4</h3>
         <p class="price">72,000 تومان</p>
         <div class="details">
           <ul><li>ترکیب ۱</li><li>ترکیب ۲</li></ul>
@@ -49,18 +58,9 @@
       </div>
 
       <div class="menu-item" onclick="toggleDetails(this)">
-        <img src="assets/images/macchiato.png" alt="ماکیاتو">
-        <h3>ماکیاتو</h3>
-        <p class="price">74,000 تومان</p>
-        <div class="details">
-          <ul><li>ترکیب ۱</li><li>ترکیب ۲</li></ul>
-        </div>
-      </div>
-
-      <div class="menu-item" onclick="toggleDetails(this)">
-        <img src="assets/images/mocha.png" alt="موکا">
-        <h3>موکا</h3>
-        <p class="price">84,000 تومان</p>
+        <img src="assets/images/hot5.png" alt="نوشیدنی‌های گرم 5">
+        <h3>نوشیدنی‌های گرم 5</h3>
+        <p class="price">75,000 تومان</p>
         <div class="details">
           <ul><li>ترکیب ۱</li><li>ترکیب ۲</li></ul>
         </div>
@@ -72,26 +72,17 @@
 <div class="menu-items">
 
       <div class="menu-item" onclick="toggleDetails(this)">
-        <img src="assets/images/ice-latte.png" alt="آیس لاته">
-        <h3>آیس لاته</h3>
-        <p class="price">78,000 تومان</p>
+        <img src="assets/images/cold1.png" alt="نوشیدنی‌های سرد 1">
+        <h3>نوشیدنی‌های سرد 1</h3>
+        <p class="price">63,000 تومان</p>
         <div class="details">
           <ul><li>ترکیب ۱</li><li>ترکیب ۲</li></ul>
         </div>
       </div>
 
       <div class="menu-item" onclick="toggleDetails(this)">
-        <img src="assets/images/ice-mocha.png" alt="آیس موکا">
-        <h3>آیس موکا</h3>
-        <p class="price">84,000 تومان</p>
-        <div class="details">
-          <ul><li>ترکیب ۱</li><li>ترکیب ۲</li></ul>
-        </div>
-      </div>
-
-      <div class="menu-item" onclick="toggleDetails(this)">
-        <img src="assets/images/ice-americano.png" alt="آیس آمریکانو">
-        <h3>آیس آمریکانو</h3>
+        <img src="assets/images/cold2.png" alt="نوشیدنی‌های سرد 2">
+        <h3>نوشیدنی‌های سرد 2</h3>
         <p class="price">66,000 تومان</p>
         <div class="details">
           <ul><li>ترکیب ۱</li><li>ترکیب ۲</li></ul>
@@ -99,18 +90,27 @@
       </div>
 
       <div class="menu-item" onclick="toggleDetails(this)">
-        <img src="assets/images/ice-chocolate.png" alt="آیس چاکلت">
-        <h3>آیس چاکلت</h3>
-        <p class="price">70,000 تومان</p>
+        <img src="assets/images/cold3.png" alt="نوشیدنی‌های سرد 3">
+        <h3>نوشیدنی‌های سرد 3</h3>
+        <p class="price">69,000 تومان</p>
         <div class="details">
           <ul><li>ترکیب ۱</li><li>ترکیب ۲</li></ul>
         </div>
       </div>
 
       <div class="menu-item" onclick="toggleDetails(this)">
-        <img src="assets/images/frappe.png" alt="فرپه">
-        <h3>فرپه</h3>
-        <p class="price">76,000 تومان</p>
+        <img src="assets/images/cold4.png" alt="نوشیدنی‌های سرد 4">
+        <h3>نوشیدنی‌های سرد 4</h3>
+        <p class="price">72,000 تومان</p>
+        <div class="details">
+          <ul><li>ترکیب ۱</li><li>ترکیب ۲</li></ul>
+        </div>
+      </div>
+
+      <div class="menu-item" onclick="toggleDetails(this)">
+        <img src="assets/images/cold5.png" alt="نوشیدنی‌های سرد 5">
+        <h3>نوشیدنی‌های سرد 5</h3>
+        <p class="price">75,000 تومان</p>
         <div class="details">
           <ul><li>ترکیب ۱</li><li>ترکیب ۲</li></ul>
         </div>
@@ -122,45 +122,45 @@
 <div class="menu-items">
 
       <div class="menu-item" onclick="toggleDetails(this)">
-        <img src="assets/images/cheesecake.png" alt="چیزکیک">
-        <h3>چیزکیک</h3>
-        <p class="price">85,000 تومان</p>
+        <img src="assets/images/dessert1.png" alt="دسرها 1">
+        <h3>دسرها 1</h3>
+        <p class="price">63,000 تومان</p>
         <div class="details">
           <ul><li>ترکیب ۱</li><li>ترکیب ۲</li></ul>
         </div>
       </div>
 
       <div class="menu-item" onclick="toggleDetails(this)">
-        <img src="assets/images/tiramisu.png" alt="تیرامیسو">
-        <h3>تیرامیسو</h3>
-        <p class="price">84,000 تومان</p>
+        <img src="assets/images/dessert2.png" alt="دسرها 2">
+        <h3>دسرها 2</h3>
+        <p class="price">66,000 تومان</p>
         <div class="details">
           <ul><li>ترکیب ۱</li><li>ترکیب ۲</li></ul>
         </div>
       </div>
 
       <div class="menu-item" onclick="toggleDetails(this)">
-        <img src="assets/images/cupcake.png" alt="کاپ کیک">
-        <h3>کاپ کیک</h3>
-        <p class="price">60,000 تومان</p>
+        <img src="assets/images/dessert3.png" alt="دسرها 3">
+        <h3>دسرها 3</h3>
+        <p class="price">69,000 تومان</p>
         <div class="details">
           <ul><li>ترکیب ۱</li><li>ترکیب ۲</li></ul>
         </div>
       </div>
 
       <div class="menu-item" onclick="toggleDetails(this)">
-        <img src="assets/images/brownie.png" alt="براونی">
-        <h3>براونی</h3>
-        <p class="price">70,000 تومان</p>
-        <div class="details">
-          <ul><li>ترکیب ۱</li><li>ترکیب ۲</li></ul>
-        </div>
-      </div>
-
-      <div class="menu-item" onclick="toggleDetails(this)">
-        <img src="assets/images/waffle.png" alt="وافل">
-        <h3>وافل</h3>
+        <img src="assets/images/dessert4.png" alt="دسرها 4">
+        <h3>دسرها 4</h3>
         <p class="price">72,000 تومان</p>
+        <div class="details">
+          <ul><li>ترکیب ۱</li><li>ترکیب ۲</li></ul>
+        </div>
+      </div>
+
+      <div class="menu-item" onclick="toggleDetails(this)">
+        <img src="assets/images/dessert5.png" alt="دسرها 5">
+        <h3>دسرها 5</h3>
+        <p class="price">75,000 تومان</p>
         <div class="details">
           <ul><li>ترکیب ۱</li><li>ترکیب ۲</li></ul>
         </div>
@@ -172,45 +172,45 @@
 <div class="menu-items">
 
       <div class="menu-item" onclick="toggleDetails(this)">
-        <img src="assets/images/borage.png" alt="دمنوش گل‌گاوزبان">
-        <h3>دمنوش گل‌گاوزبان</h3>
-        <p class="price">48,000 تومان</p>
+        <img src="assets/images/tea1.png" alt="دمنوش‌ها 1">
+        <h3>دمنوش‌ها 1</h3>
+        <p class="price">63,000 تومان</p>
         <div class="details">
           <ul><li>ترکیب ۱</li><li>ترکیب ۲</li></ul>
         </div>
       </div>
 
       <div class="menu-item" onclick="toggleDetails(this)">
-        <img src="assets/images/chamomile.png" alt="دمنوش بابونه">
-        <h3>دمنوش بابونه</h3>
-        <p class="price">45,000 تومان</p>
+        <img src="assets/images/tea2.png" alt="دمنوش‌ها 2">
+        <h3>دمنوش‌ها 2</h3>
+        <p class="price">66,000 تومان</p>
         <div class="details">
           <ul><li>ترکیب ۱</li><li>ترکیب ۲</li></ul>
         </div>
       </div>
 
       <div class="menu-item" onclick="toggleDetails(this)">
-        <img src="assets/images/ginger-lemon.png" alt="دمنوش زنجبیل و لیمو">
-        <h3>دمنوش زنجبیل و لیمو</h3>
-        <p class="price">50,000 تومان</p>
+        <img src="assets/images/tea3.png" alt="دمنوش‌ها 3">
+        <h3>دمنوش‌ها 3</h3>
+        <p class="price">69,000 تومان</p>
         <div class="details">
           <ul><li>ترکیب ۱</li><li>ترکیب ۲</li></ul>
         </div>
       </div>
 
       <div class="menu-item" onclick="toggleDetails(this)">
-        <img src="assets/images/hibiscus.png" alt="دمنوش چای ترش">
-        <h3>دمنوش چای ترش</h3>
-        <p class="price">54,000 تومان</p>
+        <img src="assets/images/tea4.png" alt="دمنوش‌ها 4">
+        <h3>دمنوش‌ها 4</h3>
+        <p class="price">72,000 تومان</p>
         <div class="details">
           <ul><li>ترکیب ۱</li><li>ترکیب ۲</li></ul>
         </div>
       </div>
 
       <div class="menu-item" onclick="toggleDetails(this)">
-        <img src="assets/images/mint.png" alt="دمنوش نعناع">
-        <h3>دمنوش نعناع</h3>
-        <p class="price">44,000 تومان</p>
+        <img src="assets/images/tea5.png" alt="دمنوش‌ها 5">
+        <h3>دمنوش‌ها 5</h3>
+        <p class="price">75,000 تومان</p>
         <div class="details">
           <ul><li>ترکیب ۱</li><li>ترکیب ۲</li></ul>
         </div>
@@ -222,45 +222,45 @@
 <div class="menu-items">
 
       <div class="menu-item" onclick="toggleDetails(this)">
-        <img src="assets/images/salad.png" alt="سالاد سزار">
-        <h3>سالاد سزار</h3>
-        <p class="price">108,000 تومان</p>
+        <img src="assets/images/food1.png" alt="غذاها 1">
+        <h3>غذاها 1</h3>
+        <p class="price">63,000 تومان</p>
         <div class="details">
           <ul><li>ترکیب ۱</li><li>ترکیب ۲</li></ul>
         </div>
       </div>
 
       <div class="menu-item" onclick="toggleDetails(this)">
-        <img src="assets/images/pasta.png" alt="پاستا آلفردو">
-        <h3>پاستا آلفردو</h3>
-        <p class="price">120,000 تومان</p>
+        <img src="assets/images/food2.png" alt="غذاها 2">
+        <h3>غذاها 2</h3>
+        <p class="price">66,000 تومان</p>
         <div class="details">
           <ul><li>ترکیب ۱</li><li>ترکیب ۲</li></ul>
         </div>
       </div>
 
       <div class="menu-item" onclick="toggleDetails(this)">
-        <img src="assets/images/sandwich.png" alt="ساندویچ بوقلمون">
-        <h3>ساندویچ بوقلمون</h3>
-        <p class="price">95,000 تومان</p>
+        <img src="assets/images/food3.png" alt="غذاها 3">
+        <h3>غذاها 3</h3>
+        <p class="price">69,000 تومان</p>
         <div class="details">
           <ul><li>ترکیب ۱</li><li>ترکیب ۲</li></ul>
         </div>
       </div>
 
       <div class="menu-item" onclick="toggleDetails(this)">
-        <img src="assets/images/soup.png" alt="سوپ قارچ">
-        <h3>سوپ قارچ</h3>
-        <p class="price">60,000 تومان</p>
+        <img src="assets/images/food4.png" alt="غذاها 4">
+        <h3>غذاها 4</h3>
+        <p class="price">72,000 تومان</p>
         <div class="details">
           <ul><li>ترکیب ۱</li><li>ترکیب ۲</li></ul>
         </div>
       </div>
 
       <div class="menu-item" onclick="toggleDetails(this)">
-        <img src="assets/images/pizza.png" alt="پیتزا مخلوط">
-        <h3>پیتزا مخلوط</h3>
-        <p class="price">130,000 تومان</p>
+        <img src="assets/images/food5.png" alt="غذاها 5">
+        <h3>غذاها 5</h3>
+        <p class="price">75,000 تومان</p>
         <div class="details">
           <ul><li>ترکیب ۱</li><li>ترکیب ۲</li></ul>
         </div>
