@@ -5,55 +5,49 @@ body {
   background: linear-gradient(to top, #f5e9df, #e7d6c4);
   color: #3e2c21;
 }
-/* Home */
-.home {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
+h1, h2 {
   text-align: center;
 }
-.home-container {
+/* صفحه اصلی */
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.home-box {
+  background: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.home-menu {
   display: flex;
   flex-direction: column;
-  align-items: center;
-}
-.home-coffee {
-  width: 180px;
-  border-radius: 100px;
-  margin-bottom: 20px;
-}
-.home-button {
+  gap: 12px;
   margin-top: 20px;
-  padding: 12px 24px;
-  border: none;
+}
+.home-menu a {
   background-color: #6c4c3d;
   color: white;
-  font-size: 16px;
-  border-radius: 30px;
+  padding: 10px;
+  border-radius: 12px;
   text-decoration: none;
+  text-align: center;
 }
-/* Menu */
+/* صفحه منو */
 .menu-container {
   max-width: 800px;
   margin: auto;
   padding: 20px;
 }
-h1 {
-  text-align: center;
-  margin-bottom: 40px;
-}
 .menu-category {
   margin-bottom: 40px;
-}
-.menu-category h2 {
-  font-size: 20px;
-  margin-bottom: 15px;
 }
 .menu-items {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 15px;
 }
 .menu-item {
   display: flex;
@@ -62,6 +56,8 @@ h1 {
   border-radius: 16px;
   padding: 10px 15px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-decoration: none;
+  color: #3e2c21;
 }
 .menu-item img {
   width: 60px;
@@ -70,32 +66,15 @@ h1 {
   border-radius: 12px;
   margin-left: 15px;
 }
-.item-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
 .item-info h3 {
   margin: 0;
-  font-size: 16px;
 }
-.details-btn {
-  margin-top: 5px;
-  padding: 5px 12px;
-  background-color: #6c4c3d;
-  color: white;
-  text-decoration: none;
-  border-radius: 12px;
-  font-size: 13px;
-  width: fit-content;
-}
-/* Details */
+/* صفحه جزئیات */
 .details {
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  text-align: center;
 }
 .details-container {
   background-color: #fff;
@@ -103,6 +82,7 @@ h1 {
   padding: 30px 40px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   max-width: 400px;
+  text-align: center;
 }
 .product-img {
   width: 120px;
