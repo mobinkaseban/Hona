@@ -19,6 +19,11 @@ body {
   padding: 15px;
   text-align: center;
   transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 160px;
 }
 .card:hover, .menu-item:hover {
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);

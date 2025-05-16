@@ -15,9 +15,7 @@ function loadCart() {
   });
   total.innerText = "جمع کل: " + sum.toLocaleString() + " تومان";
 }
-function printInvoice() {
-  window.print();
-}
+function printInvoice() { window.print(); }
 function sendToWhatsApp() {
   let msg = "سفارش:
 ", total = 0;
