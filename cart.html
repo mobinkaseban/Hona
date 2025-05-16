@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>سبد خرید</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body class="cart">
+  <div class="cart-container">
+    <h2>سبد خرید شما</h2>
+    <div id="cart-items">
+      <!-- محصولات به‌صورت داینامیک اینجا قرار می‌گیرند -->
+    </div>
+    <p id="total-price">جمع کل: ۰ تومان</p>
+    <div class="cart-actions">
+      <button onclick="printInvoice()">چاپ فاکتور</button>
+      <button onclick="sendToWhatsApp()">ارسال به واتساپ منشی</button>
+    </div>
+  </div>
+</body>
+</html>

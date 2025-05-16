@@ -10,16 +10,16 @@
 <body class="details">
   <div class="details-container">
     <h2>کاپوچینو</h2>
-    <img src="assets/images/cappuccino.png" alt="کاپوچینو" class="product-img">
-    <p class="price">۷۸,۰۰۰ تومان</p>
-    <p class="ingredients">ترکیبات: اسپرسو، شیر، کف شیر</p>
+    <img src="assets/images/hot2.png" alt="کاپوچینو" class="product-img">
+    <p class="price">۸۵,۰۰۰ تومان</p>
+    <p class="ingredients">ترکیبات: اسپرسو، شیر بخار داده شده، کف شیر</p>
     <div class="sizes">
       <span>انتخاب سایز:</span>
-      <button>S</button>
-      <button>M</button>
-      <button>L</button>
+      <button onclick="selectSize('S')">کوچک</button>
+      <button onclick="selectSize('M')">متوسط</button>
+      <button onclick="selectSize('L')">بزرگ</button>
     </div>
-    <button class="add-to-cart" onclick="addToCart()">افزودن به سبد خرید</button>
+    <button class="add-to-cart" onclick="addToCart('کاپوچینو', 85000)">افزودن به سبد خرید</button>
   </div>
 </body>
 </html>
