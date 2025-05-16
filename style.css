@@ -1,110 +1,38 @@
 body {
-  font-family: 'Vazirmatn', sans-serif;
+  font-family: sans-serif;
   direction: rtl;
-  background-color: #e9f5f0;
-  color: #2b3e2e;
+  background: #eaf8f2;
   margin: 0;
   padding: 0;
+  color: #2b3e2e;
 }
-
-h1, h2, h3 {
-  text-align: center;
-  color: #1e3d34;
-}
-
-a {
-  text-decoration: none;
-  color: #1d5c4f;
-}
-
-.home {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 50px;
-}
-
-.home img {
-  width: 120px;
-  margin-bottom: 20px;
-}
-
-.home a {
-  margin-top: 20px;
-  background-color: #3d7b64;
-  padding: 10px 30px;
-  color: white;
-  border-radius: 10px;
-}
-
-.about-container, .categories-container, .menu-container, .details-container, .cart-container {
-  padding: 30px;
-  max-width: 700px;
-  margin: auto;
-}
-
-.about-grid, .category-grid, .menu-items {
+.container { max-width: 800px; margin: auto; padding: 30px; }
+.grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
 }
-
-.about-card, .category-card, .menu-item {
+.card, .menu-item {
   background: white;
-  border: 1px solid #b2d8c7;
+  border: 2px dashed #88bbaa;
+  border-radius: 20px;
   padding: 15px;
-  border-radius: 12px;
-  box-shadow: 0 0 8px rgba(0,0,0,0.05);
   text-align: center;
   transition: 0.3s;
 }
-
-.about-card:hover, .category-card:hover, .menu-item:hover {
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+.card:hover, .menu-item:hover {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   transform: translateY(-3px);
 }
-
-.category-card {
-  background-color: #d4ede1;
-  font-weight: bold;
-}
-
-.menu-item img {
-  width: 100px;
-  height: 100px;
-  object-fit: contain;
-  margin-bottom: 10px;
-}
-
-.item-info h3 {
-  margin: 0;
-  font-size: 18px;
-}
-
-button {
-  background-color: #3d7b64;
+.button {
+  background: #1d8f6c;
   color: white;
+  padding: 10px 20px;
   border: none;
-  padding: 10px 20px;
-  border-radius: 8px;
+  border-radius: 10px;
+  margin-top: 20px;
   cursor: pointer;
-  margin-top: 10px;
 }
-
-button:hover {
-  background-color: #2f604e;
-}
-
-#cart-items div {
-  margin: 10px 0;
-}
-
-.next-btn {
-  display: inline-block;
-  margin-top: 30px;
-  background: #3d7b64;
-  padding: 10px 20px;
-  border-radius: 8px;
-  color: white;
-  text-align: center;
+.button:hover {
+  background: #156c52;
 }
